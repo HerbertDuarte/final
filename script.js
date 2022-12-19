@@ -14,7 +14,7 @@ function calcular1(){
   }
   else if(media < 7){
     var resultado = 15 - (media*2)
-    alert(`Você precisará de ${resultado.toFixed(1)} pontos na prova final.`).
+    alert(`Você precisará de ${resultado.toFixed(1)} pontos na prova final.`)
   }
 }
   
