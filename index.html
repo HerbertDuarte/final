@@ -11,49 +11,57 @@
 
   <main>
 
-    <h1>Calculo de Média Final - IFBA</h1>
+    <h1>Calculo de Média Final<br>IFBA</h1>
 
-    <section id="media-geral">
+    <section class="selecao">
+
+          <label for="seletor">Selecione o método</label>
+          <select name="seletor" id="seletor" onchange="ocultar(this.value)">
+            <option value="0" disabled selected></option>
+            <option value="1">Media geral</option>
+            <option value="2">Media por unidade</option>
+          </select>
+
+    </section>
+
+    <section style="display: none;" class="box-input" id="media-geral">
 
       <div>
         <label for="media">Digite sua média geral do semestre</label>
-        <input type="number" name="media" id="media">
+        <input type="number" name="media" class="media" id="media">
       </div>
 
       <div id="buttonDiv">
-        <input id="botao" type="submit" value="Calcular" onclick="calcular1()">
-      </div>
-
-      <div id="resultado1">
-        
-        
+        <input class="botao" id="botao" type="submit" value="Calcular" onclick="calcular1()">
       </div>
 
     </section>
 
-    <!-- <section id="media-unitaria">
+    <section style="display: none;" class="box-input" id="media-unitaria">
 
       <div>
-        <label for="media">Digite sua nota da 1 unidade</label>
-        <input type="number" name="media" id="media">
+        <label for="media1">Digite sua nota da 1 unidade</label>
+        <input type="number" name="media1" class="media" id="media1">
 
-        <label for="media">Digite sua nota da 2 unidade</label>
-        <input type="number" name="media" id="media">
+        <label for="media2">Digite sua nota da 2 unidade</label>
+        <input type="number" name="media2" class="media" id="media2">
 
-        <label for="media">Digite sua nota da 3 unidade</label>
-        <input type="number" name="media" id="media">
+        <label for="media3">Digite sua nota da 3 unidade</label>
+        <input type="number" name="media3" class="media" id="media3">
       </div>
 
-      <input type="submit" value="Calcular" onclick="calcular1()">
+      <div><input class="botao" type="submit" value="Calcular" onclick="calcular2()"></div>
 
       <div id="resultado2">
         
         
       </div>
 
-    </section> -->
+    </section>
 
   </main>
+
+  <footer>Site desenvolvido por <a href="https://herbertduarte.github.io/">Herbert Duarte</a></footer>
 
   <script defer src="script.js"></script>
 </body>
