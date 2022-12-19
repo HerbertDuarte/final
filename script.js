@@ -6,7 +6,7 @@ function calcular1(){
   if( media >= 7){
     alert('Parabéns! Você foi APROVADO e não precisará de provas finais.')
   }
-  else if( media < 0){
+  else if( media < 0 || media > 10){
     alert('ERRO (Média inválida)')
   }
   else if(media < 2.5){

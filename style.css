@@ -10,7 +10,7 @@ body{
 }
 main{
   max-width: 800px;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 h1{
@@ -20,13 +20,14 @@ h1{
 section > div{
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
 }
 
 #media{
-  max-width: 300px;
+  width: 250px;
   height: 25px;
   border-radius:5px;
   border: 0;
@@ -43,4 +44,5 @@ section > div{
   border-radius: 5px;
   border: 0;
   cursor: pointer;
+  margin: auto;
 }
