@@ -70,3 +70,13 @@ footer a{
   text-decoration: none;
   color: rgb(105, 105, 255);
 }
+@media (max-width:430px) {
+    h1{
+        font-size: 1.7;
+    }
+}
+@media (max-width:350px) {
+    h1{
+        font-size: 1.5;
+    }
+}
