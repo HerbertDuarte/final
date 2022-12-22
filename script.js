@@ -38,14 +38,14 @@ function calcular2(){
     alert('ERRO (Verifique os valores preenchidos). OS 3 campos de notas devem ser preenchidos. As notas devem ter valores de 0 até 10.')
   }
   else if( media >= 7){
-    alert(`Media = ${media}.Parabéns! Você foi APROVADO e não precisará de provas finais.`)
+    alert(`Media = ${media.toFixed(1)}.Parabéns! Você foi APROVADO e não precisará de provas finais.`)
   }
   else if(media < 2.5){
     alert('Infelizmente sua média não foi suficiente para ir para as proas finais! :( ')
   }
   else if(media < 7){
     var resultado = 15 - (media*2)
-    alert(`Media = ${media}. Você precisará de ${resultado.toFixed(1)} pontos na prova final.`)
+    alert(`Media = ${media.toFixed(1)}. Você precisará de ${resultado.toFixed(1)} pontos na prova final.`)
   }
 }
 
